@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR SECTION */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+}
+#logo{
+    margin: 0px  0px;
+}
+#logo img{
+    height: 70px;
+    margin: 5px  22px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul li{
+    font-size: 1.7rem;
+    list-style: none;
+}
+#navbar ul li a{
+     display: block;
+     padding: 1px 33px;
+     color: white;
+     border-radius: 10px;
+     text-decoration: none;
+}
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+}
+
+/* HOME SECTION */
+#home{
+    display: flex;
+    height:560px;
+    flex-direction: column;
+    padding: 5px 2px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(img/img3.jpg) no-repeat center center/cover; 
+    height: 90%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Battambang', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Battambang', cursive;
+    font-size: 1rem;
+    
+}
+.h-primary{
+    font-family: 'Kanit', sans-serif;
+    padding: 15px;
+    font-size: 3rem;
+}
+.btn{
+    padding: 6px 25px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    border: 2.5px solid white;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: rgb(129, 104, 61);
+    font-family: 'Battambang', cursive;
+}
+
+/* SERVICE SECTION */
+#services{
+    margin: 15px;
+    display: flex;
+}
+#service-container h1{
+    margin-top: 20px;
+}
+#services .box{
+    /* display: flex; */
+    border: 2px solid rgb(144, 8, 112);
+    padding: 20px;
+    background-color: rgb(226, 209, 209);
+    margin: 3px 5px;
+    border-radius: 22px;
+}
+#services .box img{
+    height: 152px;
+    margin: auto;
+    display: block;
+}
+#services
+#services
+.h-secondary{
+    font-family: 'Kanit', sans-serif;
+    padding: 15px;
+    font-size: 3rem;
+}
+
+.center{
+    text-align: center;
+}
+
+/* CLIENT SECTION */
+
+#client-section{
+    position: relative;
+    height: 352px;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(img/img2.jpg);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 20px;
+}
+#client img{
+    height: 130px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* CONTACT SECTION */
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/img1.jpg)no-repeat center center/cover;
+    z-index: -1;
+    opacity: .4;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.contact-box input,
+.contact-box textarea{
+   width: 100%;
+   padding: 8px;
+   font-size: 1rem;
+   border-radius: 10px;
+}
+.contact-box form{
+    flex-basis: 31%;
+    width: 40%;
+}
+.contact-box label{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
